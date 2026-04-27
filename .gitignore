@@ -4,3 +4,11 @@ iris-main.log
 .git
 **.tar.gz
 **.tar
+
+# Mermaid render artifacts and the regenerable PDF (run docs/build_pdf.py to rebuild)
+docs/_diagrams/
+docs/ARCHITECTURE.pdf
+
+# Python bytecode
+__pycache__/
+*.pyc

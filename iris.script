@@ -26,6 +26,8 @@
 
     zn "IRISAPP"
 
+    // SignBridge: install the Health Dataset (10 disease tables) for HistoryAgent SQL tools.
+    zpm "install dataset-health"
 
     // Create /_vscode web app to support intersystems-community.testingmanager VS Code extension
     zpm "install vscode-per-namespace-settings"
@@ -50,4 +52,9 @@
 
     
     zpm "load /home/irisowner/dev/ -v":1:1
+
+    // SignBridge: build the FastEmbed knowledge base from src/SignBridge/docs/.
+    // KB.Build() catches its own exceptions and prints the error; safe to call directly.
+    do ##class(SignBridge.KB).Build()
+
     halt

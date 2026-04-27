@@ -2,7 +2,8 @@
 name = "local"
 server = { host = "localhost", port = 1972, username = "SuperUser", password = "SYS" }
 endpoints = [
-    {path = "/mcp/sample" }
+    {path = "/mcp/sample" },
+    {path = "/mcp/signbridge" }
 ]
 
 

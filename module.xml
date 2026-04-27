@@ -8,7 +8,23 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="Sample.PKG"/>
+      <Resource Name="SignBridge.AgentBase.CLS"/>
+      <Resource Name="SignBridge.DelegateTools.CLS"/>
+      <Resource Name="SignBridge.Entry.CLS"/>
+      <Resource Name="SignBridge.KB.CLS"/>
+      <Resource Name="SignBridge.MCPService.CLS"/>
+      <Resource Name="SignBridge.MCPSetup.CLS"/>
+      <Resource Name="SignBridge.Orchestrator.CLS"/>
+      <Resource Name="SignBridge.ReportWriter.CLS"/>
+      <Resource Name="SignBridge.Tools.CLS"/>
+      <Resource Name="SignBridge.ToolSet.CLS"/>
+      <Resource Name="SignBridge.SubAgents.HistoryAgent.CLS"/>
+      <Resource Name="SignBridge.SubAgents.InterpreterBriefer.CLS"/>
+      <Resource Name="SignBridge.SubAgents.ReportWriterAgent.CLS"/>
+      <Resource Name="SignBridge.SubAgents.SymptomAnalyzer.CLS"/>
+      <Resource Name="SignBridge.SubAgents.TriageScorer.CLS"/>
       <Invoke Method="Run" Class="Sample.MCPSetup"/>
+      <Invoke Method="Run" Class="SignBridge.MCPSetup"/>
     </Module>
   </Document>
 </Export>
