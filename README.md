@@ -107,7 +107,7 @@ Set session = agent.CreateSession()
 // This requires using both tools defined in Sample.Tools and packaged in Sample.ToolSet
 Set request = "Add a person named Alice aged 30, and then get people younger than 35."
 Set response = agent.Chat(session, request)
-write response.content
+write response.Content
 ```
 
 ### Test MCP Server

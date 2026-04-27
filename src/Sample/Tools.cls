@@ -1,8 +1,16 @@
 Class Sample.Tools Extends %AI.Tool
 {
 
+Method QueueAdmission(name As %String, age As %Integer) {
+    // TODO - do admission stuffs    
+    Set person = ##class(Sample.Person).%New()
+    Set person.Name = name
+    Set person.Age = age
+    Do person.%Save()
+}
+
 /// Tool to add a person to the database
-Method AddPerson(name As %String, age As %Integer){
+Method AddPerson(name As %String, age As %Integer) {
     Set person = ##class(Sample.Person).%New()
     Set person.Name = name
     Set person.Age = age
